@@ -10,7 +10,7 @@ load('vmPFC_Trial_Vars_shared.mat') % load data
 
 %% Get range of subjective utility values for binning
 monkeys = {'Batman', 'Hobbes'};
-bin_edge_factor = 11; % bin edges are multiples of the original bin edges estimated by the histogram
+bin_edge_factor = 6; % bin edges are multiples of the original bin edges estimated by the histogram
 monkey_id = 2;
 % offer_id = 1; % used for plotting psychometric curve
 
@@ -169,6 +169,6 @@ title('Fitted psychometric function');
 axis square;
 grid on;
  
-% % Save matrices
-save(['data/n_corr_obs_monkey' num2str(monkey_id)], 'corr_offer_mat')
-save(['data/n_total_obs_monkey' num2str(monkey_id)], 'total_offer_mat')
+%% Save matrices
+save(['data/n_corr_obs_monkey' num2str(monkey_id) '_' num2str(numel(bin_edges)) 'bins'], 'corr_offer_mat')
+save(['data/n_total_obs_monkey' num2str(monkey_id) '_' num2str(numel(bin_edges)) 'bins'], 'total_offer_mat')
