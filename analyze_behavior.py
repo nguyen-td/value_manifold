@@ -12,7 +12,7 @@ from perceptual_straightening.modules.elbo import ELBO
 data_path = Path('data')
 save_params_path = Path('fitted_parameters')
 monkey_id = 2
-n_bin_edges = 10
+n_bin_edges = 31
 
 n_corr_obs = np.array(loadmat(Path(data_path) / f'n_corr_obs_monkey{monkey_id}_{n_bin_edges}bins.mat')['corr_offer_mat'], dtype=np.float32)
 n_total_obs = np.array(loadmat(Path(data_path) / f'n_total_obs_monkey{monkey_id}_{n_bin_edges}bins.mat')['total_offer_mat'], dtype=np.float32)
