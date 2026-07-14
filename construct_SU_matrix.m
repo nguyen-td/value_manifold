@@ -10,8 +10,8 @@ load('vmPFC_Trial_Vars_shared.mat') % load data
 
 %% Get range of subjective utility values for binning
 monkeys = {'Batman', 'Hobbes'};
-bin_edge_factor = 6; % bin edges are multiples of the original bin edges estimated by the histogram
-monkey_id = 1;
+bin_edge_factor = 4; % bin edges are multiples of the original bin edges estimated by the histogram
+monkey_id = 2;
 % offer_id = 1; % used for plotting psychometric curve
 
 all_SU = {};
